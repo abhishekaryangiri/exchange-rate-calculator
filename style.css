@@ -1,0 +1,113 @@
+
+
+:root{
+    --primary-color:#5fbaa7;
+}
+*{
+    /* background-image: url("https://wallpaperaccess.com/full/3331328.jpg"); */
+    box-sizing: border-box;
+}
+body{
+   
+    
+    background-image: linear-gradient(rgb(250, 102, 102), rgb(255, 250, 163));
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    padding: 20px;
+}
+.text-center {
+    color: black;
+    font-size: 14px;
+    margin-top: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.devinfo {
+    position: absolute;
+    bottom: 8px;
+    /* right: 4%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+  }
+
+.container {
+}
+h1{
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.btn{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.btn:focus{
+    outline: none;
+}
+.money-img{
+    width: 150px;
+}
+.currency{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    background-position: right 3px top 50%,0,0;
+    background-size:12px auto, 100%;
+    background-repeat: no-repeat;
+}
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+.swap-rate-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+   color: rgb(34, 0, 255);
+    font-size: 14px;
+    padding: 0 10px;
+}
+select:focus,
+input:focus,
+button:focus{
+    outline: 0;
+}
+
+@media(max-width:600px) {
+    .currency input{
+        width: 200px;
+    }
+}
